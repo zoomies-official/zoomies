@@ -22,46 +22,52 @@
   </head>
   <body class="h-100 d-flex flex-column">
 
-    <!-- Navigation bar, adapted from https://getbootstrap.com/docs/5.1/components/navbar/ -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="images/2gether-transparent.png" width="40" alt="Breda University of Applied Sciences">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="example.html">Example</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                UX Patterns
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="hero.html">Hero Section</a></li>
-                <li><a class="dropdown-item" href="carousel.html">Carousel</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="two-columns.html">Two-column Layout</a></li>
-                <li><a class="dropdown-item" href="cards.html">Cards</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://buas-media-interactive.github.io/prj4-guide/" target="_blank">PRJ4 Guide</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="corporate.html">Corporate</a>
-            </li>
-          </ul>
-        </div>
+   <!-- Natigation bar option 1 -->
+<nav class="navbar bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Zoomies</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENU</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-    </nav>
-    <!-- End of navigation bar -->
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="example.html">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Corporate
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Management</a></li>
+              <li><a class="dropdown-item" href="#">Marketing</a></li>
+              <li><a class="dropdown-item" href="#">Content</a></li>
+              <li>
+              </li>
+              <li><a class="dropdown-item" href="#">Production</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- Nav bar option 1 ends here -->
 
     <section class="container my-4">
       <div class="border-start border-primary border-5 p-2 bg-primary bg-opacity-10 rounded">
@@ -110,7 +116,7 @@
         <div class="col-12 col-md-10 col-lg-8 col-xl-6 text-center">
           <h2>Our vision</h2>
           <p>
-            At 2gether, we envision a world where diversity thrives, and connections are boundless. Our online platform is a vibrant space where individuals from all walks of life unite to discover, share, and fulfil their unique needs and aspirations. We are dedicated to fostering a sense of belonging, breaking down barriers, and creating a global community where every person can find what they seek, creating meaningful connections that transcend boundaries. 2gether is more than just a platform; it's a celebration of the richness that comes from bringing people together, empowering them to explore, connect, and build a future where unity knows no limits.
+            In a world where owning a dog can occasionally feel solitary, we believe that unplanned interactions amongst like-minded dog owners will build stronger networks and more satisfying experiences. Only because then, every park stroll, every trip together, and every tail wag will turn into a chance for bonding for dogs and even their owners.
           </p>
         </div>
       </div>
@@ -126,25 +132,16 @@
             <h4 class="rounded-5 border border-danger bg-danger py-4 bg-opacity-25 fs-4">Joy</h4>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <h4 class="rounded-5 border border-warning bg-warning py-4 bg-opacity-25 fs-4">Quality</h4>
+            <h4 class="rounded-5 border border-warning bg-warning py-4 bg-opacity-25 fs-4">Freedom</h4>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <h4 class="rounded-5 border border-success bg-success py-4 bg-opacity-25 fs-4">Inclusivity</h4>
+            <h4 class="rounded-5 border border-success bg-success py-4 bg-opacity-25 fs-4">Pet Well-being</h4>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <h4 class="rounded-5 border border-info bg-info py-4 bg-opacity-25 fs-4">Happiness</h4>
+            <h4 class="rounded-5 border border-info bg-info py-4 bg-opacity-25 fs-4">Responsibility </h4>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <h4 class="rounded-5 border border-primary bg-primary py-4 bg-opacity-25 fs-4">Togetherness</h4>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <h4 class="rounded-5 border border-danger bg-danger py-4 bg-opacity-25 fs-4">Experience</h4>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <h4 class="rounded-5 border border-warning bg-warning py-4 bg-opacity-25 fs-4">Community</h4>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <h4 class="rounded-5 border border-success bg-success py-4 bg-opacity-25 fs-4">Belonging</h4>
+            <h4 class="rounded-5 border border-primary bg-primary py-4 bg-opacity-25 fs-4">Community</h4>
           </div>
         </div>
       </div>
@@ -154,11 +151,11 @@
     <footer class="shadow-lg mt-auto py-4 bg-body">
       <div class="container d-flex justify-content-between align-items-center">
         <p>
-          © 2020&ndash;2024 &mdash; Breda University of Applied Sciences
+          © 2025 &mdash; Zoomies
         </p>
         <ul class="list-unstyled d-flex align-items-center opacity-75">
           <li>
-            <a href="https://www.facebook.com/bredauniversityas" target="_blank">
+            <a href="https://www.facebook.com/people/Zoomies-Brand/61574046521271/?mibextid=wwXIfr&rdid=kDmV5CVjLuHXBIHa&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1C2vV1Sm97%2F%3Fmibextid%3DwwXIfr" target="_blank">
               <img class="m-2" src="images/facebook.svg" alt="Follow us on" width="26">
             </a>
           </li>
@@ -178,7 +175,7 @@
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/bredauniversityas/" target="_blank">
+            <a href="https://www.instagram.com/zoomies.official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
               <img class="m-2" src="images/instagram.svg" alt="Follow us on Instagram" width="26">
             </a>
           </li>
