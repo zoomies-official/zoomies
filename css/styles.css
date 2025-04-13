@@ -34,6 +34,14 @@ footer a:hover {
 	font-weight: bold;
 }
 
+#navbar-corporate .nav-link {
+  color: black;
+}
+
+#navbar-corporate .nav-link:hover {
+  color: #555; /* optional hover color */
+}
+
 /* Hero Section shadow */
 
 .white-shadow {
