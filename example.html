@@ -1,5 +1,7 @@
 <!doctype html>
 <html lang="en" class="h-100">
+	
+	
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,54 +22,183 @@
     <!-- End of Google Analytics code -->
 
   </head>
-  <body class="h-100 d-flex flex-column">
-
-   <!-- Natigation bar option 1 -->
-<nav class="navbar bg-body-tertiary fixed-top">
+	
+	
+<!-- Natigation bar option 1 -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Zoomies</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+   <a class="navbar-brand" >
+  <img src="images/plainlogo.svg" alt="Zoomies Logo" height="80" >
+</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENU</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="example.html">Product</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">About</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Corporate
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Management</a></li>
-              <li><a class="dropdown-item" href="#">Marketing</a></li>
-              <li><a class="dropdown-item" href="#">Content</a></li>
-              <li>
-              </li>
-              <li><a class="dropdown-item" href="#">Production</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form class="d-flex mt-3" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="two-columns.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="example.html">Product</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="corporate.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Corporate
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="corporate.html">Production</a></li>
+            <li><a class="dropdown-item" href="corporate.html">Content</a></li>
+            <li><a class="dropdown-item" href="corporate.html">Makreting</a></li>
+	        <li><a class="dropdown-item" href="corporate.html">Management</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
 <!-- Nav bar option 1 ends here -->
+
+	
+	
+<style>
+    /* Custom Block Styles */
+    .waze-block {
+      background-color: #7B8D46;
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 2cm; /* Adjusted to 2cm to maintain space between blocks */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding shadow for a better effect */
+    }
+
+    .waze-block img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .waze-block h3 {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #FBB03C;
+    }
+
+    .waze-block p {
+      font-size: 1rem;
+      color: white;
+    }
+
+    .block-image-container {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .block-text-container {
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Adjust large block style for more impact */
+    .big-block {
+      background-color: #ED8034;
+      padding: 40px;
+      border-radius: 15px;
+      margin-top: 2cm; /* This creates the 2cm gap between the rows */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding shadow for consistency */
+    }
+
+    .big-block h3 {
+      font-size: 2rem;
+      color: #2C3E50;
+    }
+
+    .big-block p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    /* Remove excessive margin between the rows and blocks */
+    .row {
+      margin-bottom: 1.5cm; /* Adjusted to 1.5cm instead of 2cm */
+    }
+
+    /* Space between the blocks */
+    .mb-4 {
+      margin-bottom: 1.5cm; /* Reduced margin between the blocks */
+    }
+	
+	
+  </style>
+
+<body>
+
+  <div class="container py-5">
+    <!-- First Row for 2 big blocks (side-by-side) -->
+    <div class="row">
+      <!-- Block 1 (Large Block) -->
+      <div class="col-md-6 mb-4">
+        <div class="waze-block">
+          <div class="block-image-container">
+            <img src="images/tailicon.svg" alt="Image 1">
+          </div>
+          <div class="block-text-container">
+            <h3>OUR PRODUCT</h3>
+            <p>We’re excited to introduce the Zoomies App! A new way to connect, explore, and enjoy life with your dog. At the heart of our app is an interactive map designed to support dog owners in their daily routines and enhance their dog walking experiences. The app fosters the creation of small, local communities of dog owners in every neighborhood, helping people build connections right where they live. Through messaging features, dog owners can easily reach out to fellow walkers nearby, supporting our core value of community. Beyond connection, the Zoomies App helps users balance work, life, and social well-being. By encouraging social interactions through shared dog walking experiences, it promotes the values of joy and freedom, creating new opportunities for owners to unwind, meet people, and strengthen their bond with their dogs. Finally, our interactive map highlights safe walking routes and dog-friendly locations, addressing a common challenge for dog owners: finding safe, welcoming spaces to walk and explore. With Zoomies, every walk is more than just a routine, it’s a chance to connect, explore, and belong.</p>
+          </div>
+        </div>
+      </div>
+		
+
+      <!-- Block 2 (Large Block) -->
+<div class="col-md-6 mb-4">
+  <div class="block-image-container">
+	  
+         <div class="iphone-frame">
+  <img src="images/app1.png" alt="App Screenshot" class="iphone-screen">
+</div>
+	  
+        </div>
+        <div class="block-text-container">
+			
+          <h3>Interactive Map</h3>
+        </div>
+      </div>
+		
+		
+
+		
+		
+    <!-- Second Section for One Large Block -->
+    <div class="row scroll-block">
+      <div class="col-12">
+        <div class="big-block">
+          <div class="block-image-container">
+          <div class="iphone-frame">
+  <img src="images/app1.png" alt="App Screenshot" class="iphone-screen">
+</div>
+
+          </div>
+          <div class="block-text-container">
+            <h3>Single Big Block</h3>
+            <p>This is a single large block that appears after you scroll down. It takes up the full width and provides a more detailed explanation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+	
+  <body class="h-100 d-flex flex-column">
+
+	  
+	  
+	  
+	  
+	  
+ 
 
     <section class="container my-4">
       <div class="border-start border-primary border-5 p-2 bg-primary bg-opacity-10 rounded">
@@ -147,47 +278,44 @@
       </div>
     </div>
 
-    <!-- A footer with socials -->
-    <footer class="shadow-lg mt-auto py-4 bg-body">
-      <div class="container d-flex justify-content-between align-items-center">
-        <p>
-          © 2025 &mdash; Zoomies
-        </p>
-        <ul class="list-unstyled d-flex align-items-center opacity-75">
-          <li>
-            <a href="https://www.facebook.com/people/Zoomies-Brand/61574046521271/?mibextid=wwXIfr&rdid=kDmV5CVjLuHXBIHa&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1C2vV1Sm97%2F%3Fmibextid%3DwwXIfr" target="_blank">
-              <img class="m-2" src="images/facebook.svg" alt="Follow us on" width="26">
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/school/bredauniversityas/" target="_blank">
-              <img class="m-2" src="images/linkedin.svg" alt="Follow us on LinkedIn" width="26">
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/bredauas" target="_blank">
-              <img class="m-2" src="images/twitter.svg" alt="Follow us on Twitter" width="26">
-            </a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/BredaUniversityofAppliedSciences" target="_blank">
-              <img class="m-2" src="images/youtube.svg" alt="Follow us on YouTube" width="26">
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/zoomies.official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-              <img class="m-2" src="images/instagram.svg" alt="Follow us on Instagram" width="26">
-            </a>
-          </li>
-          <li>
-            <a href="https://www.tiktok.com/@bredauniversityas" target="_blank">
-              <img class="m-2" src="images/tiktok.svg" alt="Follow us on TikTok" width="26">
-            </a>
-          </li>
-        </ul>
+  	<!-- Start of footer --> 
+<footer class="text-white pt-5 pb-4" style="background-color: #7B8D46; color: #FFE3A2;">
+  <div class="container text-center text-md-start">
+    <div class="row text-center text-md-start">
+      
+      <!-- Contact -->
+      <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-info-white">Contact</h5>
+        <p>Email: <a href="mailto:info@zoomies.com" class="text-white pt-5 pb-4">info@zoomies.com</a></p>
+        <p>Phone: <a href="tel:+31 64983752" class="text-white pt-5 pb-4">+31 64983752</a></p>
+        <p>Veemarktstraat 34b, Breda</p>
       </div>
-    </footer>
-    <!-- End of the footer -->
+
+      <!-- Quick Links -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-white">Quick Links</h5>
+	    <p><a href="index.html" class="text-white text-decoration-none">Home</a></p>
+        <p><a href="two-columns.html" class="text-white text-decoration-none">About</a></p>
+        <p><a href="example.html" class="text-white text-decoration-none">Product</a></p>
+        <p><a href="corporate.html" class="text-white text-decoration-none">Corporate</a></p>
+      </div>
+
+      <!-- Social Media -->
+      <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-white">Follow Us</h5>
+        <a href="https://www.facebook.com/profile.php?id=61574046521271" class="text-white me-4"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/zoomies.official/" class="text-white me-4"><i class="fab fa-instagram"></i></a>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="text-center mt-4">
+      <p>&copy; 2025 Zoomies. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<!-- End of footer --> 
 
   </body>
 </html>

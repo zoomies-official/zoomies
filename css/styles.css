@@ -43,4 +43,117 @@ footer a:hover {
 		0 0 .5em white;
 }
 
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  color: #333;
+}
 
+.product-section {
+  background-color: #fff;
+  padding: 3rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.product-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #7B8D46; 
+  margin-bottom: 1.5rem;
+}
+
+.product-description {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.product-button {
+  background-color: #ED8034; 
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-button:hover {
+  background-color: #F57C00;
+}
+
+.product-image {
+  border-radius: 15px;
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  margin: 1.5rem 0;
+}
+
+.product-section .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-content {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translateY(-50%);
+  color: #ED8034;
+  padding: 1rem;
+  border-radius: 0.5rem;
+ font-size: 80;
+}
+.iphone-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f8f9fa; 
+}	
+
+.iphone-frame {
+	
+  width: 300px;
+  height: 600px;
+  background: #000;
+  border-radius: 40px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  overflow: hidden;
+	
+}
+
+.iphone-frame::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 5px;
+  background: #333;
+  border-radius: 5px;
+}
+
+.iphone-screen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
