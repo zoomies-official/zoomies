@@ -1,11 +1,13 @@
-/* Importing a Google Font */
+/* Importing a Adobe Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
+@import url('<link rel="stylesheet" href="https://use.typekit.net/ufb5jpg.css">');
 
 /* Changing the main font and background colour */
 
 body {
-	font-family: Raleway, sans-serif;
+	font-family: "piepie", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 	background-color: #fffcf8;
 }
 
@@ -53,7 +55,9 @@ footer a:hover {
 
 /* General Styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "alfabet", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   background-color: #f3f3f3;
   color: #333;
 }
@@ -115,27 +119,33 @@ body {
   max-width: 500px;
   margin: 0 auto;
 }
-
 .text-overlay {
   position: absolute;
   top: 50%;
   left: 65%;
   transform: translateY(-50%);
-  color: #ED8034;
   padding: 1rem;
   border-radius: 0.5rem;
- font-size: 80;
+  text-align: left;
 }
+
+.text-overlay h2 {
+  font-family: "piepie", sans-serif;
+  font-size: 6rem;
+  font-weight: bold;
+  color: #ED8034;
+  margin: 0;
+}
+
 .iphone-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: #f8f9fa; 
-}	
+  height: 70vh;
+} 
 
 .iphone-frame {
-	
+  
   width: 300px;
   height: 600px;
   background: #000;
@@ -144,7 +154,7 @@ body {
   position: relative;
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
   overflow: hidden;
-	
+  
 }
 
 .iphone-frame::before {
