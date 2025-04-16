@@ -1,393 +1,427 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 
-    <!-- Own Styles -->
-    <link rel="stylesheet" href="css/styles.css">
+        <!-- Own Styles -->
+        <link rel="stylesheet" href="css/styles.css" />
 
-    <!-- Social media icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="https://use.typekit.net/ufb5jpg.css" />
+        <!-- Social media icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    <!-- Bootstrap Javascript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!-- Bootstrap Javascript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <title>PRJ4 Base Group Template &mdash; Corporate Information</title>
+        <title>PRJ4 Base Group Template &mdash; Corporate Information</title>
 
-    <!-- Google Analytics code goes just below here (check PRJ4 Guide for details) -->
+        <!-- Google Analytics code goes just below here (check PRJ4 Guide for details) -->
 
-    <!-- End of Google Analytics code -->
-    
-  </head>
-  <body data-bs-spy="scroll" data-bs-target="#navbar-corporate" data-bs-smooth-scroll="true">
+        <!-- End of Google Analytics code -->
+    </head>
+    <body data-bs-spy="scroll" data-bs-target="#navbar-corporate" data-bs-smooth-scroll="true">
+        <!-- Natigation bar option 1 -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <img src="images/plainlogo.svg" alt="Zoomies Logo" height="80" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="example.html">Product</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" aria-current="page" href="corporate.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Corporate
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="corporate.html">Production</a></li>
+                                <li><a class="dropdown-item" href="corporate.html">Content</a></li>
+                                <li><a class="dropdown-item" href="corporate.html">Makreting</a></li>
+                                <li><a class="dropdown-item" href="corporate.html">Management</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Nav bar option 1 ends here -->
 
-	
-	
-<!-- Natigation bar option 1 -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-   <a class="navbar-brand" >
-  <img src="images/plainlogo.svg" alt="Zoomies Logo" height="80" >
-</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="two-columns.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="example.html">Product</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="corporate.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           Corporate
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="corporate.html">Production</a></li>
-            <li><a class="dropdown-item" href="corporate.html">Content</a></li>
-            <li><a class="dropdown-item" href="corporate.html">Makreting</a></li>
-	        <li><a class="dropdown-item" href="corporate.html">Management</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<!-- Nav bar option 1 ends here -->
+        <header class="py-2 py-md-4 py-lg-5 text-center container-fluid text-light" style="background-color: #7b8d46;">
+            <h1 class="fw-bold">Corporate information</h1>
+        </header>
 
+        <main class="container-fluid container-xl">
+            <div class="row">
+                <div class="col-sm-4 col-md-3 col-lg-2 py-4">
+                    <nav id="navbar-corporate" class="nav sticky-sm-top flex-row flex-sm-column lh-1 justify-content-sm-between">
+                        <a class="nav-link mb-2 fs-5 text-decoration-none" href="#general">General</a>
+                        <a class="nav-link mb-2 fs-5 text-decoration-none" href="#content">Content</a>
+                        <a class="nav-link mb-2 fs-5 text-decoration-none" href="#production">Production</a>
+                        <nav class="nav d-none d-sm-flex flex-column mb-2">
+                            <a class="nav-link ms-1 mb-2 text-decoration-none" href="#production-1">Design Elements</a>
+                            <a class="nav-link ms-1 mb-2 text-decoration-none" href="#production-2">Credits</a>
+                            <a class="nav-link ms-1 mb-2 text-decoration-none" href="#production-3">Testing Report</a>
+                        </nav>
+                        <a class="nav-link mb-2 fs-5 text-decoration-none" href="#marketing">Marketing</a>
 
-    <header class="py-2 py-md-4 py-lg-5 text-center container-fluid text-light" style="background-color: #7B8D46;">
-  <h1 class="fw-light">Corporate information</h1>
-</header>
+                        <nav class="nav d-none d-sm-flex flex-column mb-2">
+                            <a class="nav-link ms-1 mb-2 text-decoration-none" href="#marketing-1">Context of campaign and promotional activities</a>
+                            <a class="nav-link ms-1 mb-2 text-decoration-none" href="#marketing-2">Learning Points</a>
+                            <a class="nav-link ms-1 mb-2 text-decoration-none" href="#marketing-3">Future Planning</a>
+                            <a class="nav-link ms-1 mb-2 text-decoration-none" href="#marketing-4">Professionalism</a>
+                        </nav>
+                        <a class="nav-link mb-2 fs-5 text-decoration-none" href="#management">Management</a>
 
+                        <nav class="nav d-none d-sm-flex flex-column mb-2">
+                            <a class="nav-link ms-1 mb-2 text-decoration-none" href="#management-1">Lean Canvas</a>
+                            <a class="nav-link ms-1 mb-2 text-decoration-none" href="#management-2">Validation of Assumptions</a>
+                        </nav>
 
-    <main class="container-fluid container-xl">
-      <div class="row">
-        <div class="col-sm-4 col-md-3 col-lg-2 py-4">
-          <nav id="navbar-corporate" class="nav sticky-sm-top flex-row flex-sm-column lh-1 justify-content-sm-between">
-           <a class="nav-link mb-2 fs-5 text-decoration-none" href="#general">General</a>
-           <a class="nav-link mb-2 fs-5 text-decoration-none" href="#content">Content</a>
-           <a class="nav-link mb-2 fs-5 text-decoration-none" href="#production">Production</a>
-           <nav class="nav d-none d-sm-flex flex-column mb-2">
-            <a class="nav-link ms-1 mb-2 text-decoration-none" href="#production-1">Design Elements</a>
-            <a class="nav-link ms-1 mb-2 text-decoration-none" href="#production-2">Credits</a>
-            <a class="nav-link ms-1 mb-2 text-decoration-none" href="#production-3">Testing Report</a>
-          </nav>
-            <a class="nav-link mb-2 fs-5 text-decoration-none" href="#marketing">Marketing</a>
+                        <a class="nav-link mb-2 fs-5 text-decoration-none" href="#appendix">Appendix</a>
+                    </nav>
+                </div>
+                <div class="col-sm-8 col-md-9 col-lg-10 py-sm-4">
+                    <!-- Start General -->
+                    <section class="product-section align-left">
+                        <h2 id="general">General Information</h2>
+                        <p>
+                            This branded website is publicly available at
+                            <a href="https://buas-media-interactive.github.io/">buas-media-interactive.github.io/my-website</a>
+                            <em>(please change text <strong>and</strong> hyperlink destination)</em>
+                        </p>
+                        <p>
+                            This website was created by:
+                        </p>
+                        <ol>
+                            <li>Elizaveta Riskova (ID: 235457)</li>
+                            <li>Karolina Radevall (ID: 232487)</li>
+                            <li>Zara Castelijn (ID: 213905)</li>
+                            <li>Devon Gijzen (ID: 232016)</li>
+                        </ol>
+                    </section>
+                    <!-- End General -->
 
-  <nav class="nav d-none d-sm-flex flex-column mb-2">
-    <a class="nav-link ms-1 mb-2 text-decoration-none" href="#marketing-1">Context of campaign and promotional activities</a>
-    <a class="nav-link ms-1 mb-2 text-decoration-none" href="#marketing-2">Learning Points</a>
-    <a class="nav-link ms-1 mb-2 text-decoration-none" href="#marketing-3">Future Planning</a>
-    <a class="nav-link ms-1 mb-2 text-decoration-none" href="#marketing-4">Professionalism</a>
-  </nav>
-  <a class="nav-link mb-2 fs-5 text-decoration-none" href="#management">Management</a>
+                    <!-- Start Content -->
+                    <section class="product-section align-left">
+                        <h2 id="content">Content</h2>
+                        <p>Please clarify here the match between students and pieces of content. Make sure that you provide a <u>link</u> to the correct page within the website</p>
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr class="bg-white">
+                                    <th scope="col">#</th>
+                                    <th scope="col">Student ID</th>
+                                    <th scope="col">Value</th>
+                                    <th scope="col">Name and link of content</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1.</th>
+                                    <td>000000</td>
+                                    <td>Value</td>
+                                    <td>
+                                        <a href="index.html">Content title</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2.</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <a href="#"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3.</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <a href="#"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4.</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <a href="#"></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section class="product-section align-left">
+                        <img src="images/persona.png" style="width: 100%; height: auto; border-radius: 25px;" />
+                    </section>
+                    <!-- End Content, start Production -->
+                    <section class="product-section align-left">
+                        <h2 id="production" class="mt-5">Production</h2>
+                        <h4 id="production-1" class="mt-2">Design Elements</h4>
+                        <img src="images/styleguide1.jpg" style="width: 100%; height: auto;" />
+                        <p>Please provide a list of design elements alongside their justifications:</p>
+                        <ul>
+                            <li>
+                                A colour scheme (with HTML colour codes, which must be consistent with your final website)
+                                <em>&mdash; see the example below from the BUas brand book:</em>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <span class="border border-secondary rounded px-2 me-1" style="background-color: #ee7622;"></span>
+                                        #EE7622
+                                        <em>The orange colour refers to the Dutch identity and the city of Breda (Oranjestad). Orange stands for&hellip;</em>
+                                    </li>
+                                    <li>
+                                        <span class="border border-secondary rounded px-2 me-1" style="background-color: #00406b;"></span>
+                                        #00406B
+                                        <em>Dark blue signifies&hellip;</em>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Font choices</li>
+                            <li>User interface patterns (e.g. grids, carousels, menu organizations etc.)</li>
+                            <li>The structure of the <strong>navigation and content</strong> (e.g. how content units are distributed across pages)</li>
+                            <li>All these elements must be justified by referring to the theory <strong>and/or vocabulary</strong> of design</li>
+                            <li>
+                                Please relate these elements to other units, for example:
+                                <ul>
+                                    <li>How does website design fit the <strong>values and personality of the brand</strong>?</li>
+                                    <li>How does website design fit the <strong>marketing and communication strategy</strong>?</li>
+                                    <li>How does website design help showcase the <strong>unique value proposal of the product</strong>?</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h4 id="production-2" class="mt-2">Credits</h4>
+                        <p>Please provide links and/or credits for third-party elements including:</p>
+                        <ul>
+                            <li>
+                                HTML <strong>templates</strong> if these are different from this one (<a href="https://github.com/buas-media-interactive/prj4-group-template" target="_blank">buas-media-interactive/prj4-group-template</a>)
+                            </li>
+                            <li>
+                                The source code for <strong>UX patterns</strong> other than the ones provided by the “Bootstrap” library (see <a href="https://getbootstrap.com/docs/5.2/" target="_blank">getbootstrap.com/docs</a> for a list
+                                of such patterns)
+                            </li>
+                            <li><strong>Images</strong> that were not produced by students themselves, including when crediting is not mandatory (in other words, we ask you to credit Unsplash images)</li>
+                        </ul>
+                        <h4 id="production-3" class="mt-2">Testing Report</h4>
+                        <p>Please write about&hellip;</p>
+                        <ul>
+                            <li>Your testing <strong>goals</strong> &ndash; in other words, what you are trying to learn about your website?</li>
+                            <li>
+                                Your testing <strong>methods</strong>, which includes information about:
+                                <ul>
+                                    <li>The test&rsquo;s <strong>participants</strong> (number, match with target audience, etc.)</li>
+                                    <li>The test&rsquo;s <strong>setting</strong> (which material is used, is it done remotely, on campus, at home, etc.)</li>
+                                    <li>The test&rsquo;s <strong>protocol</strong> (what instructions are given, how it is recorded, etc.)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Your testing <strong>results</strong>, which includes information about:
+                                <ul>
+                                    <li>Positive and negative aspects of the UI/UX that have been identified, ranked by importance.</li>
+                                    <li>Improvements that have been implemented on the final website (or that would be implemented if doing so would be too complex)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                    <!-- End Production, start Marketing -->
+                    <section class="product-section align-left">
+                        <h2 id="marketing" class="mt-5">Marketing</h2>
+                        <h4 id="marketing-1" class="mt-2">Context of campaign and promotional activities</h4>
+                        <p>
+                            Explain the context of the campaign is (What the campaign is about, what the message is, which promotional activities were executed). In addition, present the objectives as mentioned in the Communication & Media
+                            Plan.
+                        </p>
+                        <p>Explain and justify the chosen channels/platforms used and show there is a solid connection to the objectives established in the Communication & Media Plan.</p>
+                        <h4 id="marketing-2" class="mt-4">Learning Points</h4>
+                        <p>
+                            Identify and justify your learning point (based on the Communication & Media Plan). What did you learn during the duration of the project concerning the campaign? What worked and what didn’t? What went as
+                            expected and what didn’t? What would you do differently? Reflect on the past work and describe what you learned.
+                        </p>
+                        <h4 id="marketing-3" class="mt-4">Future Planning</h4>
+                        <p>Reflection on what has been done and describe in detail what you would do if the project would continue.</p>
+                        <p>Describe in detail your future recommendations if the campaign would be continued.</p>
+                        <p>Detail and describe clearly the process of what your would do differently based on you experience on this project related to the marketing assignment.</p>
+                        <h4 id="marketing-4" class="mt-4">Professionalism</h4>
+                        <p>
+                            Present and organize below all social media/online activities of the campaign. Context and material are according to the brand style, image, and vision. Images on the site are of high-quality, readable, and
+                            properly designed.
+                        </p>
+                        <ul class="list-unstyled d-flex flex-wrap justify-content-center align-items-center">
+                            <li class="m-2">
+                                <a href="#">
+                                    <!-- Please make a link to your socials instead -->
+                                    <img alt="Image Placeholder" class="img-thumbnail" src="images/social-media-placeholder.jpg" />
+                                </a>
+                            </li>
+                            <li class="m-2">
+                                <a href="#">
+                                    <!-- Please make a link to your socials instead -->
+                                    <img alt="Image Placeholder" class="img-thumbnail" src="images/social-media-placeholder.jpg" />
+                                </a>
+                            </li>
+                            <li class="m-2">
+                                <a href="#">
+                                    <!-- Please make a link to your socials instead -->
+                                    <img alt="Image Placeholder" class="img-thumbnail" src="images/social-media-placeholder.jpg" />
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <!-- End Marketing, start Management -->
+                    <section class="product-section align-left">
+                        <h2 id="management" class="mt-5">Management</h2>
 
-  <nav class="nav d-none d-sm-flex flex-column mb-2">
-    <a class="nav-link ms-1 mb-2 text-decoration-none" href="#management-1">Lean Canvas</a>
-    <a class="nav-link ms-1 mb-2 text-decoration-none" href="#management-2">Validation of Assumptions</a>
-  </nav>
+                        <h4 id="management-1" class="mt-2">Lean Canvas</h4>
 
-  <a class="nav-link mb-2 fs-5 text-decoration-none" href="#appendix">Appendix</a>
-</nav>
+                        <p>Fill in at least 2 bullet points per building block and according to the rubrics.</p>
 
-        </div>
-        <div class="col-sm-8 col-md-9 col-lg-10 py-sm-4">
+                        <p class="fw-bold">Problem</p>
+                        <ul>
+                            <li>List your top 3 problems you solve for your target group(s).</li>
+                            <li>Describe briefly how the problems are solved now (existing alternatives).</li>
+                        </ul>
+                        <p class="fw-bold">Solution</p>
+                        <ul>
+                            The eight interviews we have conducted showcased a number of problems dog owners are currently facing in their daily lives. Based on these problems, we will be implementing a number of features into our
+                            application which will be the solution to these problems. First, we will add an interactive map showcasing dog-friendly locations and walking routes. This feature is a solution for the problem of dog owners
+                            finding it challenging to find dog-friendly locations and safe places to walk their dog. Besides this, the application will feature a community feed providing interaction between dog owners in the nearby area
+                            which will be the solution to dog owners struggling to find a community of dog owners in the nearby area. Also, it will solve the problem of dog owners struggling to balance their work and social life, since they
+                            can create another part of their social life with those dog owners in their living area. The final solution is providing a feature where dog owners can easily ask health related questions to other dog owners
+                            which gives the dog owner the opportunity to take even better care of their dog.
+                        </ul>
+                        <p class="fw-bold">Customer segments</p>
+                        <ul>
+                            Everyone can be a dog owner and this has been proven by the eight interviews we have conducted. Therefore, the target audience for our brand will be dog owners between the ages of 25 and 60. Based on the
+                            interviews, our target audience will be the dog owners who are mostly interested in the health, development, and social behavior of their dogs. Since the ages of our target audience are very broad, we have
+                            decided to divide them between two subgroups being the dog owners between the ages of 25 and 40, and the dog owners between the ages of 40 and 60 since we will address them in a different manner based on which
+                            social media platforms they are using. Our ideal customer in the form of our brand persona is Max van den Berg, a 32-year-old man living in Rotterdam with his 3-year-old Australian labradoodle Luna. Max is a
+                            social, active, and responsible dog owner who struggles with finding dog-friendly locations and safe walking routes in the busy city. Max likes spontaneous outings, but his freedom is limited because he has his
+                            dog Luna. He wants to socialize more together with his dog Luna, but he finds it difficult to find the correct information he needs to do this.
+                        </ul>
+                        <p class="fw-bold">Unique value proposition</p>
+                        <ul>
+                            “A dog owner-friendly brand which provides dog-friendly comfort, community, and convenience.” Our brand listens to the target audience. We want our brand and app to help them in their daily struggles of being a
+                            dog owner by helping them be more aware of a safer environment for their dogs. We want to provide comfort by providing the safest dog-friendly walking routes which alerts the dog owner about busy streets or rough
+                            terrain. We want to provide a community by giving dog owners the ability to connect with each other. We want to provide convenience by showcasing dog parks, water stations, and vet services. All of this, with
+                            just one easy application.
+                        </ul>
+                        <p class="fw-bold">Unfair advantage</p>
+                        <ul>
+                            The unfair advantage of our brand that cannot easily be copied is that the brand thrives on the community of dog owners themselves. They help each other, on a localized manner, by creating the safest walking
+                            routes and giving health related tips to each other.
+                        </ul>
+                        <p class="fw-bold">Channels</p>
+                        <ul>
+                            As mentioned earlier, we have divided our broad target audience into two groups: the dog owners between the ages of 25 and 40, and the dog owners between the ages of 40 and 60. We will address both groups with a
+                            different social media platform. We will address the first group with Instagram since that age division is more on that social media platform. We will address the second group using Facebook since that group is
+                            more active on that social media platform.
+                        </ul>
+                        <p class="fw-bold">Key metrics</p>
+                        <ul>
+                            The key metrics we will use to measure how our brand and application are doing will be 1) the number of time our app is downloaded, 2) the number of active users, and 3) the amount of discussions about dog health
+                            related topics on our app.
+                        </ul>
+                        <p class="fw-bold">Revenue streams</p>
+                        <ul>
+                            Our brand will be creating an application which dog owners can download to find the safest and dog-friendly locations and walking routes. Our revenue model will contain different ways of making revenue. First, we
+                            will offer premium subscriptions which will allow dog owners to, for example, leave reviews on dog-friendly restaurants. We will also allow other companies to advertise their dog related products on our app which
+                            we will receive revenue from. Also, with loyal companies, we will partner up so we can collaborate which we will also receive a revenue from.
+                        </ul>
+                        <p class="fw-bold">Cost structure</p>
+                        <ul>
+                            Our fixed costs will be the salaries of our employees. Our employees will be hired to, for example, provide customer service to the dog owners who have downloaded the app or create the content to promote our
+                            application. Also, the costs for the maintenance and development of our website and application are fixed costs because it will be an ongoing process of improvement. Our variable costs will be the advertising
+                            costs since we will be advertising our brand/application monthly but in different ways and in different volumes.
+                        </ul>
+                        <p class="fw-bold">Services/products</p>
+                        <ul>
+                            <li>State what your product and/or service is and how this contributes to your unique value proposition.</li>
+                            <li>Clarify the fit between the product/service developed and the brand identity/brand image.</li>
+                        </ul>
 
-          <!-- Start General -->
-          <h2 id="general">General Information</h2>
-          <p>
-            This branded website is publicly available at
-            <a href="https://buas-media-interactive.github.io/">buas-media-interactive.github.io/my-website</a>
-            <em>(please change text <strong>and</strong> hyperlink destination)</em>
-          </p>
-          <p>
-            This website was created by:
-          </p>
-          <ol>
-            <li>Elizaveta Riskova (ID: 235457)</li>
-            <li>Karolina Radevall (ID: 232487)</li>
-            <li>Zara Castelijn (ID: 213905)</li>
-            <li>Devon Gijzen (ID: 232016)</li>
-          </ol>
-          <!-- End General -->
+                        <h4 id="management-2" class="mt-2">Validation of Assumptions</h4>
+                        <p>Write a reflection on the choices made in creating choosing the trademark, including an analysis of the existing alternatives.</p>
+                    </section>
+                    <!-- End Management, start Appendix -->
 
-          <!-- Start Content -->
+                    <section class="product-section align-left">
+                        <h2 id="appendix" class="mt-5">Appendix</h2>
 
-          <h2 id="content">Content</h2>
-          <p>Please clarify here the match between students and pieces of content. Make sure that you provide a <u>link</u> to the correct page within the website</p>
-          <table class="table table-bordered table-striped">
-            <thead>
-              <tr class="bg-white">
-                <th scope="col">#</th>
-                <th scope="col">Student ID</th>
-                <th scope="col">Value</th>
-                <th scope="col">Name and link of content</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1.</th>
-                <td>000000</td>
-                <td>Value</td>
-                <td>
-                  <a href="index.html">Content title</a>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">2.</th>
-                <td></td>
-                <td></td>
-                <td>
-                  <a href="#"></a>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">3.</th>
-                <td></td>
-                <td></td>
-                <td>
-                  <a href="#"></a>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">4.</th>
-                <td></td>
-                <td></td>
-                <td>
-                  <a href="#"></a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <img src="images/persona.png" style="width: 900px; height: auto;">
-          
-          <!-- End Content, start Production -->
-          
-          <h2 id="production" class="mt-5">Production</h2>
-          <h4 id="production-1" class="mt-2">Design Elements</h4>
-          <img src="images/styleguide1.jpg" style="width: 900px; height: auto;">
-          <p>Please provide a list of design elements alongside their justifications:</p>
-          <ul>
-            <li>
-              A colour scheme (with HTML colour codes, which must be consistent with your final website)
-              <em>&mdash; see the example below from the BUas brand book:</em>
-              <ul class="list-unstyled">
-                <li>
-                  <span class="border border-secondary rounded px-2 me-1" style="background-color: #EE7622;"></span>
-                  #EE7622
-                  <em>The orange colour refers to the Dutch identity and the city of Breda (Oranjestad). Orange stands for&hellip;</em>
-                </li>
-                <li>
-                  <span class="border border-secondary rounded px-2 me-1" style="background-color: #00406B;"></span>
-                  #00406B
-                  <em>Dark blue signifies&hellip;</em>
-                </li>
-              </ul>
-            </li>
-            <li>Font choices</li>
-            <li>User interface patterns (e.g. grids, carousels, menu organizations etc.)</li>
-            <li>The structure of the <strong>navigation and content</strong> (e.g. how content units are distributed across pages)</li>
-            <li>All these elements must be justified by referring to the theory <strong>and/or vocabulary</strong> of design</li>
-            <li>Please relate these elements to other units, for example:
-              <ul>
-                <li>How does website design fit the <strong>values and personality of the brand</strong>?</li>
-                <li>How does website design fit the <strong>marketing and communication strategy</strong>?</li>
-                <li>How does website design help showcase the <strong>unique value proposal of the product</strong>?</li>
-              </ul>
-            </li>
-          </ul>
-          <h4 id="production-2" class="mt-2">Credits</h4>
-          <p>Please provide links and/or credits for third-party elements including:</p>
-          <ul>
-            <li>HTML <strong>templates</strong> if these are different from this one (<a href="https://github.com/buas-media-interactive/prj4-group-template" target="_blank">buas-media-interactive/prj4-group-template</a>)</li>
-            <li>The source code for <strong>UX patterns</strong> other than the ones provided by the “Bootstrap” library (see <a href="https://getbootstrap.com/docs/5.2/" target="_blank">getbootstrap.com/docs</a> for a list of such patterns)</li>
-            <li><strong>Images</strong> that were not produced by students themselves, including when crediting is not mandatory (in other words, we ask you to credit Unsplash images)</li>
-          </ul>
-          <h4 id="production-3" class="mt-2">Testing Report</h4>
-          <p>Please write about&hellip;</p>
-          <ul>
-            <li>Your testing <strong>goals</strong> &ndash; in other words, what you are trying to learn about your website?</li>
-            <li>Your testing <strong>methods</strong>, which includes information about:
-              <ul>
-                <li>The test&rsquo;s <strong>participants</strong> (number, match with target audience, etc.)
-                <li>The test&rsquo;s <strong>setting</strong> (which material is used, is it done remotely, on campus, at home, etc.)
-                <li>The test&rsquo;s <strong>protocol</strong> (what instructions are given, how it is recorded, etc.)
-              </ul>
-            </li>
-            <li>Your testing <strong>results</strong>, which includes information about:
-              <ul>
-                <li>Positive and negative aspects of the UI/UX that have been identified, ranked by importance.</li>
-                <li>Improvements that have been implemented on the final website (or that would be implemented if doing so would be too complex)</li>
-              </ul>
-            </li>
-          </ul>
+                        <p>
+                            Please use the list below to provide links to evidence for all parts of your justication. Please double-check all links before delivering the website. Do not hesitate to refer to these numbers above.
+                        </p>
 
-          <!-- End Production, start Marketing -->
+                        <ol>
+                            <li>
+                                <a href="https://" target="_blank">Description of evidence #1</a>
+                            </li>
+                            <li>
+                                <a href="https://" target="_blank">Description of evidence #2</a>
+                            </li>
+                            <li>
+                                <a href="https://" target="_blank">Description of evidence #3</a>
+                            </li>
+                            <li>
+                                <a href="https://" target="_blank">Description of evidence #4</a>
+                            </li>
+                            <li>
+                                <a href="https://" target="_blank">Description of evidence #5</a>
+                            </li>
+                        </ol>
+                    </section>
+                </div>
+            </div>
+        </main>
 
-          <h2 id="marketing" class="mt-5">Marketing</h2>
-          <h4 id="marketing-1" class="mt-2">Context of campaign and promotional activities</h4>
-          <p>Explain the context of the campaign is (What the campaign is about, what the message is, which promotional activities were executed). In addition, present the objectives as mentioned in the Communication & Media Plan.</p>
-          <p>Explain and justify the chosen channels/platforms used and show there is a solid connection to the objectives established in the Communication & Media Plan.</p>
-          <h4 id="marketing-2" class="mt-4">Learning Points</h4>
-          <p>Identify and justify your learning point (based on the Communication & Media Plan). What did you learn during the duration of the project concerning the campaign? What worked and what didn’t? What went as expected and what didn’t? What would you do differently? Reflect on the past work and describe what you learned.</p>
-          <h4 id="marketing-3" class="mt-4">Future Planning</h4>
-          <p>Reflection on what has been done and describe in detail what you would do if the project would continue.</p>
-          <p>Describe in detail your future recommendations if the campaign would be continued.</p>
-          <p>Detail and describe clearly the process of what your would do differently based on you experience on this project related to the marketing assignment.</p>
-          <h4 id="marketing-4" class="mt-4">Professionalism</h4>
-          <p>Present and organize below all social media/online activities of the campaign. Context and material are according to the brand style, image, and vision. Images on the site are of high-quality, readable, and properly designed.</p>
-          <ul class="list-unstyled d-flex flex-wrap justify-content-center align-items-center">
-            <li class="m-2">
-              <a href="#"><!-- Please make a link to your socials instead -->
-                <img alt="Image Placeholder" class="img-thumbnail" src="images/social-media-placeholder.jpg">
-              </a>
-            </li>
-            <li class="m-2">
-              <a href="#"><!-- Please make a link to your socials instead -->
-                <img alt="Image Placeholder" class="img-thumbnail" src="images/social-media-placeholder.jpg">
-              </a>
-            </li>
-            <li class="m-2">
-              <a href="#"><!-- Please make a link to your socials instead -->
-                <img alt="Image Placeholder" class="img-thumbnail" src="images/social-media-placeholder.jpg">
-              </a>
-            </li>
-          </ul>
-        
-          <!-- End Marketing, start Management -->
+        <!-- Start of footer -->
+        <footer class="text-white pt-5 pb-4" style="background-color: #7b8d46; color: #ffe3a2;">
+            <div class="container text-center text-md-start">
+                <div class="row text-center text-md-start">
+                    <!-- Contact -->
+                    <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-info-white">Contact</h5>
+                        <p>Email: <a href="mailto:info@zoomies.com" class="text-white pt-5 pb-4">info@zoomies.com</a></p>
+                        <p>Phone: <a href="tel:+31 64983752" class="text-white pt-5 pb-4">+31 64983752</a></p>
+                        <p>Veemarktstraat 34b, Breda</p>
+                    </div>
 
-          <h2 id="management" class="mt-5">Management</h2>
+                    <!-- Quick Links -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-white">Quick Links</h5>
+                        <p><a href="index.html" class="text-white text-decoration-none">Home</a></p>
+                        <p><a href="about.html" class="text-white text-decoration-none">About</a></p>
+                        <p><a href="example.html" class="text-white text-decoration-none">Product</a></p>
+                        <p><a href="corporate.html" class="text-white text-decoration-none">Corporate</a></p>
+                    </div>
 
-          <h4 id="management-1" class="mt-2">Lean Canvas</h4>
+                    <!-- Social Media -->
+                    <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-white">Follow Us</h5>
+                        <a href="https://www.facebook.com/profile.php?id=61574046521271" class="text-white me-4"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/zoomies.official/" class="text-white me-4"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
 
-          <p>Fill in at least 2 bullet points per building block and according to the rubrics.</p>
-
-          <p class="fw-bold">Problem</p>
-          <ul>
-            <li>List your top 3 problems you solve for your target group(s).</li>
-            <li>Describe briefly how the problems are solved now (existing alternatives).</li>
-          </ul>
-          <p class="fw-bold">Solution</p>
-          <ul> The eight interviews we have conducted showcased a number of problems dog owners are currently facing in their daily lives. Based on these problems, we will be implementing a number of features into our application which will be the solution to these problems. First, we will add an interactive map showcasing dog-friendly locations and walking routes. This feature is a solution for the problem of dog owners finding it challenging to find dog-friendly locations and safe places to walk their dog. Besides this, the application will feature a community feed providing interaction between dog owners in the nearby area which will be the solution to dog owners struggling to find a community of dog owners in the nearby area. Also, it will solve the problem of dog owners struggling to balance their work and social life, since they can create another part of their social life with those dog owners in their living area. The final solution is providing a feature where dog owners can easily ask health related questions to other dog owners which gives the dog owner the opportunity to take even better care of their dog.
-          </ul>
-          <p class="fw-bold">Customer segments</p>
-          <ul>Everyone can be a dog owner and this has been proven by the eight interviews we have conducted. Therefore, the target audience for our brand will be dog owners between the ages of 25 and 60. Based on the interviews, our target audience will be the dog owners who are mostly interested in the health, development, and social behavior of their dogs. Since the ages of our target audience are very broad, we have decided to divide them between two subgroups being the dog owners between the ages of 25 and 40, and the dog owners between the ages of 40 and 60 since we will address them in a different manner based on which social media platforms they are using.
-
-            Our ideal customer in the form of our brand persona is Max van den Berg, a 32-year-old man living in Rotterdam with his 3-year-old Australian labradoodle Luna. Max is a social, active, and responsible dog owner who struggles with finding dog-friendly locations and safe walking routes in the busy city. Max likes spontaneous outings, but his freedom is limited because he has his dog Luna. He wants to socialize more together with his dog Luna, but he finds it difficult to find the correct information he needs to do this. 
-          </ul>
-          <p class="fw-bold">Unique value proposition</p>
-          <ul>“A dog owner-friendly brand which provides dog-friendly comfort, community, and convenience.”
-            Our brand listens to the target audience. We want our brand and app to help them in their daily struggles of being a dog owner by helping them be more aware of a safer environment for their dogs. We want to provide comfort by providing the safest dog-friendly walking routes which alerts the dog owner about busy streets or rough terrain. We want to provide a community by giving dog owners the ability to connect with each other. We want to provide convenience by showcasing dog parks, water stations, and vet services. All of this, with just one easy application.
-          </ul>
-          <p class="fw-bold">Unfair advantage</p>
-          <ul>The unfair advantage of our brand that cannot easily be copied is that the brand thrives on the community of dog owners themselves. They help each other, on a localized manner, by creating the safest walking routes and giving health related tips to each other. 
-          </ul>
-          <p class="fw-bold">Channels</p>
-          <ul>As mentioned earlier, we have divided our broad target audience into two groups: the dog owners between the ages of 25 and 40, and the dog owners between the ages of 40 and 60. We will address both groups with a different social media platform. We will address the first group with Instagram since that age division is more on that social media platform. We will address the second group using Facebook since that group is more active on that social media platform.
-          </ul>
-          <p class="fw-bold">Key metrics</p>
-          <ul>The key metrics we will use to measure how our brand and application are doing will be 1) the number of time our app is downloaded, 2) the number of active users, and 3) the amount of discussions about dog health related topics on our app.
-          </ul>
-          <p class="fw-bold">Revenue streams</p>
-          <ul>Our brand will be creating an application which dog owners can download to find the safest and dog-friendly locations and walking routes. Our revenue model will contain different ways of making revenue. First, we will offer premium subscriptions which will allow dog owners to, for example, leave reviews on dog-friendly restaurants. We will also allow other companies to advertise their dog related products on our app which we will receive revenue from. Also, with loyal companies, we will partner up so we can collaborate which we will also receive a revenue from.
-          </ul>
-          <p class="fw-bold">Cost structure</p>
-          <ul>Our fixed costs will be the salaries of our employees. Our employees will be hired to, for example, provide customer service to the dog owners who have downloaded the app or create the content to promote our application. Also, the costs for the maintenance and development of our website and application are fixed costs because it will be an ongoing process of improvement. Our variable costs will be the advertising costs since we will be advertising our brand/application monthly but in different ways and in different volumes.
-          </ul>
-          <p class="fw-bold">Services/products</p>
-          <ul>
-            <li>State what your product and/or service is and how this contributes to your unique value proposition.</li>
-            <li>Clarify the fit between the product/service developed and the brand identity/brand image.</li>
-          </ul>
-
-          <h4 id="management-2" class="mt-2">Validation of Assumptions</h4>
-          <p>Write a reflection on the choices made in creating choosing the trademark, including an analysis of the existing alternatives.</p>
-
-          <!-- End Management, start Appendix -->
-          
-
-          <h2 id="appendix" class="mt-5">Appendix</h2>
-
-          <p>
-            Please use the list below to provide links to evidence for all parts of your justication.
-            Please double-check all links before delivering the website.
-            Do not hesitate to refer to these numbers above.
-          </p>
-
-          <ol>
-            <li>
-              <a href="https://" target="_blank">Description of evidence #1</a>
-            </li>
-            <li>
-              <a href="https://" target="_blank">Description of evidence #2</a>
-            </li>
-            <li>
-              <a href="https://" target="_blank">Description of evidence #3</a>
-            </li>
-            <li>
-              <a href="https://" target="_blank">Description of evidence #4</a>
-            </li>
-            <li>
-              <a href="https://" target="_blank">Description of evidence #5</a>
-            </li>
-          </ol>
-          
-        </div>
-      </div>
-    </main>
-
-  </body>
-	
-		
-	<!-- Start of footer --> 
-<footer class="text-white pt-5 pb-4" style="background-color: #7B8D46; color: #FFE3A2;">
-  <div class="container text-center text-md-start">
-    <div class="row text-center text-md-start">
-      
-      <!-- Contact -->
-      <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-3">
-        <h5 class="text-uppercase mb-4 font-weight-bold text-info-white">Contact</h5>
-        <p>Email: <a href="mailto:info@zoomies.com" class="text-white pt-5 pb-4">info@zoomies.com</a></p>
-        <p>Phone: <a href="tel:+31 64983752" class="text-white pt-5 pb-4">+31 64983752</a></p>
-        <p>Veemarktstraat 34b, Breda</p>
-      </div>
-
-      <!-- Quick Links -->
-      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-        <h5 class="text-uppercase mb-4 font-weight-bold text-white">Quick Links</h5>
-      <p><a href="index.html" class="text-white text-decoration-none">Home</a></p>
-        <p><a href="two-columns.html" class="text-white text-decoration-none">About</a></p>
-        <p><a href="example.html" class="text-white text-decoration-none">Product</a></p>
-        <p><a href="corporate.html" class="text-white text-decoration-none">Corporate</a></p>
-      </div>
-
-      <!-- Social Media -->
-      <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-3">
-        <h5 class="text-uppercase mb-4 font-weight-bold text-white">Follow Us</h5>
-        <a href="https://www.facebook.com/profile.php?id=61574046521271" class="text-white me-4"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/zoomies.official/" class="text-white me-4"><i class="fab fa-instagram"></i></a>
-      </div>
-
-    </div>
-
-    <!-- Bottom Bar -->
-    <div class="text-center mt-4">
-      <p>&copy; 2025 Zoomies. All rights reserved.</p>
-    </div>
-  </div>
-</footer>
-<!-- End of footer --> 
-
-
-</body>
+                <!-- Bottom Bar -->
+                <div class="text-center mt-4">
+                    <p>&copy; 2025 Zoomies. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- End of footer -->
+    </body>
 </html>

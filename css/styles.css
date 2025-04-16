@@ -1,6 +1,3 @@
-/* Importing a Adobe Fonts */
-
-@import url('<link rel="stylesheet" href="https://use.typekit.net/ufb5jpg.css">');
 
 /* Changing the main font and background colour */
 
@@ -71,6 +68,9 @@ body {
   max-width: 1000px;
   text-align: center;
 }
+.align-left {
+  text-align: left !important;
+}
 
 .product-header {
   font-size: 2.5rem;
@@ -119,22 +119,28 @@ body {
   max-width: 500px;
   margin: 0 auto;
 }
-.text-overlay {
-  position: absolute;
-  top: 50%;
-  left: 65%;
-  transform: translateY(-50%);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  text-align: left;
-}
 
-.text-overlay h2 {
+.img-container{
+  position:relative;
+  display:inline-block;
+}
+.img-container .overlay{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+.overlay h2{
+  position:absolute;
+  top:75%;
+  left:75%;
+  transform:translate(-50%,-50%);
+  color:#fff;
   font-family: "piepie", sans-serif;
-  font-size: 6rem;
+  font-size: calc(3vw + 3vh);
   font-weight: bold;
   color: #ED8034;
-  margin: 0;
 }
 
 .iphone-wrapper {
@@ -174,4 +180,171 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 30px;
+}
+
+.about-us-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #7B8D46; /* Waze Blue */
+  margin-bottom: 1.5rem;
+}
+
+.about-us-subheader {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 2rem;
+}
+
+.about-us-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.about-us-button {
+  background-color: #ED8034; 
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.about-us-button:hover {
+  background-color: #F57C00;
+}
+
+.about-us-image {
+  border-radius: 15px;
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  margin: 1.5rem 0;
+}
+
+.about-us-section .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us-content {
+  max-width: 800px;
+  margin: 2 auto;
+}
+
+.waze-block {
+  background-color: #7B8D46;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 2cm; /* Adjusted to 2cm to maintain space between blocks */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding shadow for a better effect */
+}
+
+.waze-block img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.waze-block h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #FBB03C;
+}
+
+.waze-block p {
+  font-size: 1rem;
+  color: white;
+}
+
+.block-image-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.block-text-container {
+  padding: 40px;
+  text-align: center;
+
+}
+
+/* Adjust large block style for more impact */
+.big-block {
+  background-color: #ED8034;
+  padding: 40px;
+  border-radius: 15px;
+  margin-top: 2cm; /* This creates the 2cm gap between the rows */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding shadow for consistency */
+}
+
+.big-block h3 {
+  font-family: "alfabet", sans-serif;
+  font-size: 2rem;
+  color: #2C3E50;
+}
+
+.big-block p {
+  font-family: "alfabet", sans-serif;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Remove excessive margin between the rows and blocks */
+.row {
+  margin-bottom: 1.5cm; /* Adjusted to 1.5cm instead of 2cm */
+}
+
+/* Space between the blocks */
+.mb-4 {
+  margin-bottom: 1.5cm; /* Reduced margin between the blocks */
+}
+
+.hero-section {
+  background: url('images/about-hero.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+.block {
+  padding: 4rem 2rem;
+}
+.block-light {
+  background-color: #f8f9fa;
+}
+.block-dark {
+  background-color: #343a40;
+  color: white;
+}
+.value-card {
+  border-radius: 0.75rem;
+  padding: 2rem;
+  background: white;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  height: 100%;
+}
+.icon-box {
+  font-size: 3rem;
+  color: #0d6efd;
+  margin-bottom: 1rem;
+}
+.about-full-bg {
+  background: url('images/zoomies-full.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+.about-full-bg h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.about-full-bg p {
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 1rem auto 0;
 }
