@@ -8,6 +8,33 @@ body {
 	background-color: #fffcf8;
 }
 
+/* Style carousel captions */
+.carousel-caption h3,
+.carousel-caption p,
+.carousel-caption a {
+  font-family: "piepie", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #ffffff; /* Ensure text is visible */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+  font-family: "piepie", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #ffffff; /* Ensure text is visible */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+h3{
+  font-family: "piepie", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #ED8034; /* Ensure text is visible */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
 /* Changing the background colour for the header */
 
 header {
@@ -75,7 +102,7 @@ body {
 .product-header {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #7B8D46; 
+  color: #ED8034; 
   margin-bottom: 1.5rem;
 }
 
@@ -185,7 +212,7 @@ body {
 .about-us-header {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #7B8D46; /* Waze Blue */
+  color: #ED8034; /* Waze Blue */
   margin-bottom: 1.5rem;
 }
 
@@ -268,7 +295,6 @@ body {
 .block-text-container {
   padding: 40px;
   text-align: center;
-
 }
 
 /* Adjust large block style for more impact */
@@ -289,7 +315,7 @@ body {
 .big-block p {
   font-family: "alfabet", sans-serif;
   font-size: 1.2rem;
-  color: #555;
+  color: #ffffff;
 }
 
 /* Remove excessive margin between the rows and blocks */
